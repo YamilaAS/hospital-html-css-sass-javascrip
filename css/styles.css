@@ -396,5 +396,103 @@ header .container .header__content p {
     grid-template-columns: 1fr;
   }
 }
+.swiper {
+  width: 82%;
+}
+.swiper .swiper-wrapper {
+  padding: 0 0 4rem;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  background: linear-gradient(135deg, #480ca8, #4cc9f0);
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  cursor: default;
+  font-size: 0.9rem;
+}
+.swiper .swiper-wrapper .swiper-slide h1, .swiper .swiper-wrapper .swiper-slide h2, .swiper .swiper-wrapper .swiper-slide h3, .swiper .swiper-wrapper .swiper-slide h4, .swiper .swiper-wrapper .swiper-slide h5 {
+  color: #ffffff;
+}
+.swiper .swiper-wrapper .swiper-slide p {
+  margin-bottom: 1.5rem;
+}
+.swiper .swiper-wrapper .swiper-slide .patient {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.swiper .swiper-wrapper .swiper-slide .patient .avatar {
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.swiper .swiper-pagination-bullet {
+  background: #480ca8;
+}
+
+/*======================= MEDIA QUERIES (SMALL) =================================*/
+@media screen and (max-width: 600px) {
+  .swiper .swiper-wrapper .swiper-slide {
+    padding: 1.5rem;
+  }
+}
+/*======================= MEDIA QUERIES (MEDIUM) =================================*/
+#appointment .container {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 6%;
+}
+#appointment .container .info p {
+  margin: 0.5rem 2rem;
+  padding-bottom: 1rem;
+}
+#appointment .container .info article {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#appointment .container .info article small {
+  margin-top: 0.4rem;
+  display: block;
+}
+#appointment .container .info article .info_icon {
+  background: #f72585;
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  height: fit-content;
+  font-size: 1.2rem;
+}
+#appointment .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+#appointment .container form .form_group label {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  font-weight: 600;
+}
+#appointment .container form .form_group input, #appointment .container form .form_group textarea, #appointment .container form .form_group select {
+  background: #ffffff;
+  padding: 0.85rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.4rem;
+  resize: none;
+  appearance: none;
+}
+
+/*======================= MEDIA QUERIES (Medium) =================================*/
+/*======================= MEDIA QUERIES (SMALL) =================================*/
+@media screen and (max-width: 1024px) {
+  #appointment .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
